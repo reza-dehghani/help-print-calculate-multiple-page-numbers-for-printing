@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help print multiple page in one side printers</title>
+</head>
+<body>
+    <h1>help print multiple page in one side printers</h1>
+    <p>When I try to to print multiple page in a page in back and front side mode, I must to try minutes to find and type which pages is front and which back. so I wrote a program to take it so easier than before :)</p>
+    <formgroup>
+        <form id="form" action="#">
+            <label for="first_page">first page:</label>
+            <input type="number" id="first_page" name="first_page">
+            <label for="last_page">last page:</label>
+            <input type="number" id="last_page" name="last_page">
+            
+            <p>select type of print:</p>
+            <input type="radio" id="2page" name="type" value="2">
+            <label for="twopage">2 in a page</label><br>
+            <input type="radio" id="4page" name="type" value="4">
+            <label for="4page">4 in a page</label><br>
+
+            <hr>
+            <button>get me page numbers</button>
+            
+        </form>
+    </formgroup>
+    <hr>
+
+    <div id="front1"><span>Front Pages:     </span></div>
+</br>
+    <div id="back1"><span>Back Pages:   </span></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
